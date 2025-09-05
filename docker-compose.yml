@@ -1,6 +1,6 @@
 # Commands to run to build the images:
 # docker compose -f docker-compose.yml -f docker-compose.dev.yml up
-# docker compose -f docker-compose.yml -f docker-compose.prod.yml up
+# docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build
 services:
   # Backend Service (Express.js)
   server:
