@@ -1,0 +1,71 @@
+@use "bootstrap/scss/bootstrap" as bootstrap
+@use "sass:color"
+@use "sass:map"
+
+:root
+	--dark-green: #0c3920
+	--light-green: #e4fff0
+
+*
+	box-sizing: border-box
+
+::-moz-selection
+	color: var(--light-green)
+	background: var(--dark-green)
+
+::-webkit-selection
+	color: var(--light-green)
+	background: var(--dark-green)
+
+::selection
+	color: var(--light-green)
+	background: var(--dark-green)
+
+.debug,
+.debug *
+	outline: 1px solid red
+
+#root
+	margin: 0
+	overflow-x: hidden
+
+img
+	max-width: 100%
+
+body
+	background-color: #ede1cf
+	color: var(--dark-green)
+	margin: 0
+	padding: 0
+	min-height: 100vh
+
+.App
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+a, a:visited
+	text-decoration: none
+	font-weight: bolder
+	color: var(--dark-green)
+
+.btn
+	padding: 6px 12px
+	border-radius: 3px
+	font-weight: 500
+	&-full
+		@extend .btn
+		color: var(--light-green)
+		background-color: var(--dark-green)
+		border: 2px solid var(--dark-green)
+	&-outline
+		@extend .btn
+		border: 2px solid var(--dark-green)
+		background: transparent
+	&:hover,
+	&:focus,
+	&:active
+		@extend .btn-full
+
+section
+	padding: 20px

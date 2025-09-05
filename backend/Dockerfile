@@ -1,0 +1,16 @@
+# --- Build Stage ---
+
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+
+# The first . refers to the folder on our machine where we'll be running this (here it's "client")
+# The second . refers to the folder inside the container, which is WORKDIR (here it's "/app").
+COPY . .
+
+# Expose port (we'll find it in docker-compose.yml)
+EXPOSE 5005
+
+# We need to expose the host
+CMD ["npm", "run", "dev"]

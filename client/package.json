@@ -1,0 +1,53 @@
+{
+	"name": "project-3-green-news",
+	"private": true,
+	"version": "0.0.0",
+	"homepage": "https://dev.laurasnclr.com/projects/green-news/",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"merge": "./git-merge.sh",
+		"build": "vite build",
+		"lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"test": "vitest --ui"
+	},
+	"dependencies": {
+		"axios": "^1.6.8",
+		"bootstrap": "^5.3.3",
+		"dotenv": "^16.4.5",
+		"eslint": "^8.38.0",
+		"firebase": "^12.1.0",
+		"jsdom": "^22.1.0",
+		"react": "^18.2.0",
+		"react-bootstrap": "^2.10.2",
+		"react-bootstrap-icons": "^1.11.4",
+		"react-dom": "^18.2.0",
+		"react-firebase-hooks": "^5.1.1",
+		"react-paginate": "^8.2.0",
+		"react-router-dom": "^6.22.3",
+		"zustand": "^5.0.8"
+	},
+	"devDependencies": {
+		"@types/css-modules": "^1.0.5",
+		"@types/node": "^22.5.5",
+		"@types/node-sass": "^4.11.7",
+		"@types/react": "^18.3.6",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.15.0",
+		"@typescript-eslint/parser": "^7.15.0",
+		"@vitejs/plugin-react": "^4.0.0",
+		"classnames": "^2.5.1",
+		"css-modules-typescript-loader": "^4.0.1",
+		"eslint": "^8.38.0",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.3.4",
+		"jsdom": "^22.1.0",
+		"sass": "^1.75.0",
+		"typescript": "^5.6.2",
+		"vite": "^7.1.3",
+		"vite-tsconfig-paths": "^5.0.1",
+		"vitest": "^3.2.4"
+	}
+}

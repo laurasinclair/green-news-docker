@@ -1,0 +1,15 @@
+services:
+  # Frontend Service (React)
+  client:
+    build:
+      context: ./client # our local folder
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true # ensures hot-reloading works in Docker
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+      - /app/node_modules
